@@ -9,6 +9,10 @@
   <a class="contact" href="https://twitter.com/{{ $id }}">
     <i class="fab fa-twitter" aria-hidden="true"></i>
   </a>
+  {{- else if (eq $service "dockerhub") }}
+  <a class="contact" href="https://hub.docker.com/u/{{ $id }}">
+    <i class="fab fa-docker" aria-hidden="true"></i>
+  </a>
     {{- else if (eq $service "facebook") }}
   <a class="contact" href="https://facebook.com/{{ $id }}">
     <i class="fab fa-facebook" aria-hidden="true"></i>
